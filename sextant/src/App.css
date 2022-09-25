@@ -18,14 +18,16 @@
   border: 1px solid #000;
   padding: 22px;
   width: 350px;
-  height: 250px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .exhibit-img {
   max-width: 50px;
 }
+
