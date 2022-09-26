@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { w3cwebsocket as W3CWebSocket } from "websocket";
 
 export default function Latency() {
-  const ws = new WebSocket("ws://localhost:55455");
+  const ws = new W3CWebSocket("ws://localhost:55455");
   const [latency, setLatency] = useState(0);
 
   useEffect(() => {
