@@ -12,8 +12,7 @@ export default function App() {
         <Exhibit
           image={ip}
           title="Public IP Address"
-          displayIP={true}
-        />
+          displayIP={true}/>
         <Exhibit image={latency} title="Latency Information"/>
       </div>
     </>

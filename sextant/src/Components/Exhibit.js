@@ -1,6 +1,7 @@
 import React from "react";
 import "./IPAddress";
 import IPAddress from "./IPAddress";
+import Latency from "./Latency";
 
 export default function Exhibit({ image, title, displayIP }) {
   return (
@@ -11,7 +12,7 @@ export default function Exhibit({ image, title, displayIP }) {
       <header>
         <h1>{title}</h1>
       </header>
-      {displayIP && (
+      {displayIP ? (
         <>
           <p className="ipv4">
             IP v4 address: <IPAddress type="" />
@@ -20,7 +21,7 @@ export default function Exhibit({ image, title, displayIP }) {
             IP v6 address: <IPAddress type="64" />
           </p>
         </>
-      )}
+      ): <Latency />}
     </div>
   );
 }
