@@ -9,11 +9,8 @@ export default function App() {
     <>
       <Banner />
       <div className="info-container">
-        <Exhibit
-          image={ip}
-          title="Public IP Address"
-          displayIP={true}/>
-        <Exhibit image={latency} title="Latency Information"/>
+        <Exhibit image={ip} title="Public IP Address" displayIP={true} />
+        <Exhibit image={latency} title="Latency Information" />
       </div>
     </>
   );

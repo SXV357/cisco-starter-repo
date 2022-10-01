@@ -21,7 +21,9 @@ export default function Exhibit({ image, title, displayIP }) {
             IP v6 address: <IPAddress type="64" />
           </p>
         </>
-      ): <Latency />}
+      ) : (
+        <Latency />
+      )}
     </div>
   );
 }

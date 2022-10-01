@@ -7,7 +7,7 @@ export default function Latency() {
 
   useEffect(() => {
     ws.onmessage = (message) => {
-      setLatency(Date.now() - message.data)
+      setLatency(Date.now() - message.data);
     };
   }, []);
 
